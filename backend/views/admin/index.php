@@ -13,10 +13,16 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="admin-index">
 
     <!-- <h1><?= Html::encode($this->title) ?></h1> -->
-
-    <p>
+    <div class="box-body">
+        <div class="callout callout-danger">
+            <h4 style="text-align: center;">
+                <i class="fa fa-warning">&nbsp HARAP HUBUNGI PIHAK IT MANAGER JIKA INGIN MENGUBAH DATA ADMIN </i>&nbsp <i class="fa fa-warning"> </i>
+            </h4>
+        </div>
+    </div>
+    <!-- <p>
         <?= Html::a('<i class="fa fa-plus"></i> Tambah Admin', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
+    </p> -->
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
@@ -25,7 +31,10 @@ $this->params['breadcrumbs'][] = $this->title;
         'filterModel' => $searchModel,
         'columns' => [
             [
-                'class' => 'yii\grid\SerialColumn'
+                'class' => 'yii\grid\SerialColumn',
+                'header' => 'No.',
+                'headerOptions' => ['style' => 'text-align:center;'],
+                'contentOptions' => ['style' => 'text-align:center;']
             ],
 
             // 'id',
@@ -39,7 +48,6 @@ $this->params['breadcrumbs'][] = $this->title;
             //'updated_at',
             //'verification_token',
 
-            ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
 
