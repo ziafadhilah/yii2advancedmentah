@@ -61,15 +61,15 @@ AppAsset::register($this);
             ['label' => 'Gudang Kami', 'url' => ['/site/gudang']],
             Yii::$app->user->isGuest ? (
                 ['label' => 'Login / Daftar', 'url' => ['/site/login']]
-            ) : (
-                '<li>'
-                . Html::beginForm(['/site/logout'], 'post')
+            ) : 
+            
+            (
+                 Html::beginForm(['/site/logout'], 'post')
                 . Html::submitButton(
                     'Logout (' . Yii::$app->user->identity->username . ')',
-                    ['class' => 'btn btn-link logout']
+                    ['class' => 'btn btn-light']
                 )
                 . Html::endForm()
-                . '</li>'
             )
         ],
     ]);

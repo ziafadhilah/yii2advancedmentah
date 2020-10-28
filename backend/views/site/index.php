@@ -97,8 +97,12 @@ $this->title = 'Halo, Selamat Datang!';
       </div>
     </div>
   </div>
-</section>
-  <div class="content">
+  <div class="box-body">
+    <div class="callout callout-danger">
+      <h4>Harap berhati hati dan tolong teliti jika menginput suatu data.</h4>
+        <h4><p>Admin harus selalu aktif untuk memeriksa keadaan stok barang minim.</p></h4>
+    </div>
+  </div>
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-12 col-md-12">
@@ -153,7 +157,7 @@ $this->title = 'Halo, Selamat Datang!';
                                 <i class="fa fa-circle-o" style="color: #3c8dbc;"></i>
                               </div>
                             </td>
-                            <td>Halaman beranda merupakan tampilan awal pada tab admin ketika berhasil melakukan login.</td>
+                            <td>Halaman ini merupakan tampilan awal pada tab admin ketika berhasil melakukan login.</td>
                           </tr>
                           <tr>
                             <td>
@@ -174,22 +178,6 @@ $this->title = 'Halo, Selamat Datang!';
                                 Tahap 1 : Tambah kategori atau tambah ukuran nya terlebih dahulu (bebas mau yang mana dulu). <p><p>
                                 Tahap 2 : Lalu setelah itu, kalian bisa menambahkan produk dan gambar nya.
                             </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <div class="form-check">
-                                <i class="fa fa-circle-o" style="color: #3c8dbc;"></i>
-                              </div>
-                            </td>
-                            <td> <i style="color: red">Harap berhati hati dan tolong teliti jika menginput suatu data.</i></td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <div class="form-check">
-                                <i class="fa fa-circle-o" style="color: #3c8dbc;"></i>
-                              </div>
-                            </td>
-                            <td><i style="color: red">Admin harus selalu aktif untuk memeriksa keadaan stok barang minim pada menu "Stok Minim".</i></td>
                           </tr>
                         </tbody>
                       </table>
@@ -373,6 +361,7 @@ $this->title = 'Halo, Selamat Datang!';
           </div>
         </div>
       </div>
+</section>
       <script>
         var acc = document.getElementsByClassName("accordion");
         var i;
